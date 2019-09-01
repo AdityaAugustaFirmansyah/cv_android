@@ -11,6 +11,7 @@ import com.bumptech.glide.Glide;
 import com.example.mycv.aboutme.AboutMeActivity;
 import com.example.mycv.certificate.CertificateActivity;
 import com.example.mycv.contact.ContactActivity;
+import com.example.mycv.portfolio.PortfolioActivity;
 import com.example.mycv.skill.SkillActivity;
 
 import java.security.cert.Certificate;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         final Intent intentSkill = new Intent(this, SkillActivity.class);
         final Intent intentCertificate = new Intent(this, CertificateActivity.class);
         final Intent intentContact = new Intent(this, ContactActivity.class);
+        final Intent intentPortfolio = new Intent(this, PortfolioActivity.class);
 
         find(R.id.linear_about).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +52,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(intentContact);
+            }
+        });
+        find(R.id.linear_portfolio).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(intentPortfolio);
             }
         });
     }
