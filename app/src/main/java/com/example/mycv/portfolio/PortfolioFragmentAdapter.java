@@ -1,5 +1,6 @@
 package com.example.mycv.portfolio;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -29,5 +30,18 @@ public class PortfolioFragmentAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         return fragments.size();
+    }
+
+    @Nullable
+    @Override
+    public CharSequence getPageTitle(int position) {
+        switch (position){
+            case 0:
+                return "web";
+            case 1:
+                return "list repo github";
+            default:
+                return null;
+        }
     }
 }
