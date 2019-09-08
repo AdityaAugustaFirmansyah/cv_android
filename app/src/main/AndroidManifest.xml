@@ -11,11 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".portfolio.PortfolioActivity"></activity>
-        <activity android:name=".appsinfo.AppsInfoActivity" />
         <activity android:name=".contact.ContactActivity" />
         <activity android:name=".certificate.CertificateActivity" />
         <activity android:name=".skill.SkillActivity" />
         <activity android:name=".aboutme.AboutMeActivity" />
+        <activity android:name=".appsinfo.AppsInfoActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

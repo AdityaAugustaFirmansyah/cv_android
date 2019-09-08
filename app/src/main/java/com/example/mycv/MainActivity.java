@@ -5,16 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
 import com.example.mycv.aboutme.AboutMeActivity;
+import com.example.mycv.appsinfo.AppsInfoActivity;
 import com.example.mycv.certificate.CertificateActivity;
 import com.example.mycv.contact.ContactActivity;
 import com.example.mycv.portfolio.PortfolioActivity;
 import com.example.mycv.skill.SkillActivity;
-
-import java.security.cert.Certificate;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         final Intent intentCertificate = new Intent(this, CertificateActivity.class);
         final Intent intentContact = new Intent(this, ContactActivity.class);
         final Intent intentPortfolio = new Intent(this, PortfolioActivity.class);
+        final Intent intentAppsInfo = new Intent(this, AppsInfoActivity.class);
 
         find(R.id.linear_about).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +56,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(intentPortfolio);
+            }
+        });
+        find(R.id.linear_apps_info).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(intentAppsInfo);
             }
         });
     }
