@@ -22,8 +22,6 @@ public class AppsInfoFragmentAdapter extends FragmentPagerAdapter {
             case 0:
                 return new AppsInfoFragment();
             case 1:
-                return new PictureFragment();
-            case 2:
                 return new AllFeatureFragment();
                 default:
                     return null;
@@ -42,8 +40,6 @@ public class AppsInfoFragmentAdapter extends FragmentPagerAdapter {
             case 0:
                 return "Apps Info";
             case 1:
-                return "Image Apps";
-            case 2:
                 return "material / library";
             default:
                 return null;

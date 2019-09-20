@@ -24,7 +24,6 @@ public class AppsInfoActivity extends AppCompatActivity {
         TabLayout tabLayoutAppsInfo = findViewById(R.id.tab_layout_apps_info);
         ViewPager viewPagerAppsInfo = findViewById(R.id.view_pager_apps_info);
         fragments.add(new AppsInfoFragment());
-        fragments.add(new PictureFragment());
         fragments.add(new AllFeatureFragment());
         viewPagerAppsInfo.setAdapter(new AppsInfoFragmentAdapter(getSupportFragmentManager(),fragments));
         tabLayoutAppsInfo.setupWithViewPager(viewPagerAppsInfo);
